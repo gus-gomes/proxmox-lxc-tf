@@ -16,6 +16,10 @@ crash.*.log
 *.tfvars
 *.tfvars.json
 
+# terraform.tfvars holds only non-secret settings; secrets live in the
+# ignored secrets.auto.tfvars (see secrets.auto.tfvars.example)
+!terraform.tfvars
+
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
